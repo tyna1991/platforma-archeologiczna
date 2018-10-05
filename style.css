@@ -105,6 +105,9 @@ margin:0px;
     margin:2px;
     border-radius: 10%; 
 }
+.button-style:hover{
+    background-color: #a48300
+}
 #nav
 {
     display: flex;
@@ -155,10 +158,15 @@ margin:0px;
     border-radius: 10%;
     color:black;
     
+    
+    
+}
+.table-option:hover{
+    background-color:#b7b8b9
 }
 i{
     font-size:20px;
-    color: #806600ff;
+    color: rgb(206, 188, 119);
 }
 #table-container
 {
