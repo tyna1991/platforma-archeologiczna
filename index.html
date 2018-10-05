@@ -7,7 +7,8 @@
   <title>ePlatforma Archeologiczna</title>
   <meta name="description" content="ePlatforma Archeologiczna">
   <meta name="author" content="">
-
+    <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="flags.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -27,7 +28,7 @@
         <div id="header">
             
                 
-                        <a href="#" id="lang-switch" class="lang-active"><img src="blank.gif" class="flag flag-pl" alt="Polska" />Polski<i class="fa fa-angle-down"></i></a>
+                        <a href="#" id="lang-switch" class="lang-active" onclick="showLangList()" ><img src="blank.gif" class="flag flag-pl" alt="Polska" />Polski<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                         <ul id='lang-switch-list'>
                             <li><a href="#"><img src="blank.gif" class="flag flag-gb" alt="United Kingdom" />Angielski</a></li>
                             <li><a href="#"><img src="blank.gif" class="flag flag-de" alt="Germany" />Niemiecki</a></li>
@@ -125,8 +126,42 @@
     </div>
     <!--Table-->
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+ 
+
+   
+
+    function showLangList()
+    {
+        var x=document.getElementById("lang-switch-list");
+        var y=document.getElementsByClassName("fa fa-angle-down")[0];
+        var z=document.getElementsByClassName("fa fa-angle-up")[0];
+        if (x.style.display==="none" || x.style.display == '')
+        {
+            x.style.display="block";
+            y.style.display="none";
+            z.style.visibility="visible";
+            z.style.margin="0 0 0 10px";
+        }
+        else{
+            x.style.display="none";
+            y.style.display="inline-block";
+            z.style.visibility="hidden";
+            z.style.margin="0";
+        }
+        
+            
+    }
+
+    
+        
+</script>
+
+
+
+
+
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->

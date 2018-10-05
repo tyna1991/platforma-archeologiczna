@@ -25,32 +25,66 @@ body{
 #lang-switch
 {
     position: absolute;
-    width:100px;
+    width:120px;
     top:0px;
     right: 150px;
-    padding: 5.5px;
+    padding: 5.5px 10px;
     color:white;
-}
+    
 
+    
+}
+#lang-switch:hover
+{
+background-color: #b7b8b9
+}
 #lang-switch-list
 {
 
     position: absolute;
-    width:100px;
+    width:120px;
     top:37px;
     margin:0px;
     right:150px;
     display: block;
     border: 1px grey solid;
     padding: 0;
-    padding: 5.5px;
     z-index: 10;
     background-color: white;
+    display:none;
+    
+    
+}
+
+#lang-switch-list li
+{
+padding: 3px 10px;
+-webkit-transition: 0.5s;
+         transition: 0.5s;
+
 
 }
+#lang-switch-list li:hover
+{
+    background-color: #b7b8b9
+}
+
 #lang-switch-list a{
     color:black;
 }
+.flag
+{
+    margin-right:5px;
+}
+.fa-angle-down
+{
+    margin-left:10px;
+}
+.fa-angle-up
+{
+    visibility: hidden;
+}
+
 ul,ol
 {
 list-style:none;
