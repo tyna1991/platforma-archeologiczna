@@ -43,7 +43,8 @@
         <div class="ePlatforma-logo">
             <a class="logo-img" href="#"><img src="img/logo.svg"></a>
         </div>
-        <ol id="nav">
+        <div id="nav-opener"><div id="nav-opener-button" onclick="showNav()"><i class="fas fa-bars"></i></div></div>
+        <ol id="nav" class="closed">
             <li><a href="#">Widok</a>
                 <ul>
                     <li><a href="#">Lista</a></li>
@@ -127,16 +128,16 @@
     <!--Table-->
 
 <script>
-
- 
+    
+  
 
    
 
     function showLangList()
     {
-        var x=document.getElementById("lang-switch-list");
-        var y=document.getElementsByClassName("fa fa-angle-down")[0];
-        var z=document.getElementsByClassName("fa fa-angle-up")[0];
+        let x=document.getElementById("lang-switch-list");
+        let y=document.getElementsByClassName("fa fa-angle-down")[0];
+        let z=document.getElementsByClassName("fa fa-angle-up")[0];
         if (x.style.display==="none" || x.style.display == '')
         {
             x.style.display="block";
@@ -154,7 +155,19 @@
             
     }
 
-    
+    function showNav()
+    {
+        let x=document.getElementById("nav");
+        if (x.classList.contains("closed"))
+        {
+            x.classList.add("open");
+            x.classList.remove("closed");
+        }
+        else{
+            x.classList.remove("open");
+            x.classList.add("closed");
+        }
+    }
         
 </script>
 
