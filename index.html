@@ -28,13 +28,13 @@
     <div id="header-wrapper">
         <div id="header">
             
-                
+                        
                         <a href="#" id="lang-switch" class="lang-active" onclick="showLangList()" ><img src="blank.gif" class="flag flag-pl" alt="Polska" />Polski<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                         <ul id='lang-switch-list'>
                             <li><a href="#" id="gb"><img src="blank.gif" class="flag flag-gb" alt="United Kingdom" />Angielski</a></li>
                             <li><a href="#" id="de"><img src="blank.gif" class="flag flag-de" alt="Germany" />Niemiecki</a></li>
                         </ul>
-               
+                        <a id="wcwag" href="#">Accessibility</a>
             
                 
                     <a id="log-in" class="button-style" href="#">Zaloguj się</a>
@@ -195,7 +195,7 @@ var str2 = document.getElementById("de").innerHTML;
 var str3 = document.getElementById("gb").innerHTML;
 function Language(){
     var wWidth = window.innerWidth;
-    if (wWidth<450){
+    if (wWidth<550){
     var res = str.replace("Polski", "");
     document.getElementById("lang-switch").innerHTML = res;
 

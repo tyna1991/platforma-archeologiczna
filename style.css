@@ -1,11 +1,19 @@
 @media (max-width:450px)
 {
+    .ePlatforma-logo
+    {
+        display: block!important;
+    }
     #nav-opener
     {
         position: relative !important;
         top:0px !important;
         right: 0px !important;
     }
+}
+@media (max-width:550px)
+{
+    
     #lang-switch
     {
         width: 76px!important;
@@ -15,9 +23,10 @@
         width: 40px !important;
         right: 185px!important;
     }
-    .ePlatforma-logo
+    
+    #wcwag
     {
-        display: block!important;
+        right:225px!important;
     }
 }
 @media (max-width:750px)
@@ -99,6 +108,18 @@ body{
     height: auto;
     max-width: 100%;
 }
+#wcwag
+{
+    position: absolute;
+    top:0px;
+    right: 300px;
+    color:black;
+    height: 35px;
+    padding: 5.5px;
+}
+#wcwag:hover{
+    background-color: #dbdee0
+}
 #lang-switch
 {
     position: absolute;
@@ -107,7 +128,7 @@ body{
     right: 150px;
     padding: 5.5px 10px;
     color:black;
-    
+    height: 37px;
 
     
 }
