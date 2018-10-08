@@ -287,17 +287,17 @@ table.table-hover tbody tr:hover
 }
 .dataTables_length
 {
-    display: none;
+    display: none !important;
 }
 .dataTables_info
 {
-    display: none;
+    display: none !important;
 }
 .dataTables_paginate
 {
-    text-align: center;
+    text-align: center!important;
     
 }
 .dataTables_paginate a{
-    color:black;
+    color:black !important;
 }
