@@ -43,7 +43,7 @@
         <div class="ePlatforma-logo">
             <a class="logo-img" href="#"><img src="img/logo.svg"></a>
         </div>
-        <div id="nav-opener"><div id="nav-opener-button" onclick="showNav()"><i class="fas fa-bars"></i></div></div>
+        <div id="nav-opener"><div id="nav-opener-button" onclick="showNav()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></div></div>
         <ol id="nav" class="closed">
             <li><a href="#">Widok</a>
                 <ul>
@@ -158,14 +158,20 @@
     function showNav()
     {
         let x=document.getElementById("nav");
+        let iconTimes=document.getElementsByClassName("fas fa-times")[0];
+        let iconBars=document.getElementsByClassName("fas fa-bars")[0];
         if (x.classList.contains("closed"))
         {
             x.classList.add("open");
             x.classList.remove("closed");
+            iconTimes.style.visibility="visible";
+            iconBars.style.display="none";
         }
         else{
             x.classList.remove("open");
             x.classList.add("closed");
+            iconTimes.style.visibility="hidden";
+            iconBars.style.display="block";
         }
     }
         

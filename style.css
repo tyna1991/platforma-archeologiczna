@@ -15,6 +15,10 @@
         width: 40px !important;
         right: 185px!important;
     }
+    .ePlatforma-logo
+    {
+        display: block!important;
+    }
 }
 @media (max-width:750px)
 {
@@ -55,6 +59,10 @@
         position: absolute;
         top: 60px;
         right: 30px;
+    }
+    .fa-times
+    {
+        visibility: hidden;
     }
 }
 
