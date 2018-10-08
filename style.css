@@ -15,7 +15,7 @@
         right: 0px !important;
         padding: 5px !important;
         border-radius: 2% !important;
-        background-color:beige;
+        background-color: #fbfbfb;
         margin:0 35px !important;
 
         
@@ -44,7 +44,7 @@
     {
         display: inline-block !important;
         position: absolute;
-        top: 80px;
+        top: 60px;
         right: 30px;
     }
 }
