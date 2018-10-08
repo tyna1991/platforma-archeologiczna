@@ -9,6 +9,7 @@
   <meta name="author" content="">
     <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="flags.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -71,7 +72,7 @@
     <table id="table" class="table table-hover table-striped table-bordered"><!--Table head-->
     <thead>
     <tr>
-    <th>Lp</th>
+    <th> Lp</th>
     <th>Nazwa stanowiska</th>
     <th>Wojew&oacute;dztwo</th>
     <th>Powiat</th>
@@ -129,7 +130,20 @@
 
 <script>
     
-  
+    $(document).ready(function () {
+  $('#table').DataTable({
+    "ordering": true,// false to disable sorting (or any other option)
+    "searching": false,// false to disable search (or any other option)
+    "language": { "oPaginate": {
+            "sFirst":    "Pierwszy",
+            "sLast":    "Ostatni",
+            "sNext":    "Następny",
+            "sPrevious": "Poprzedni"
+        }}
+     
+  });
+  $('.dataTables_length').addClass('bs-select');
+});
 
    
 
@@ -220,6 +234,13 @@ document.addEventListener("DOMContentLoaded", Language, false);
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+
+<script type="text/javascript" 
+src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" 
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/locale/bootstrap-table-pl-PL.min.js"></script>
+
+</script>
 </div>
 </body>
 </html>

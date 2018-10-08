@@ -285,3 +285,19 @@ table.table-hover tbody tr:hover
 {
     background-color: #8e7979;
 }
+.dataTables_length
+{
+    display: none;
+}
+.dataTables_info
+{
+    display: none;
+}
+.dataTables_paginate
+{
+    text-align: center;
+    
+}
+.dataTables_paginate a{
+    color:black;
+}
