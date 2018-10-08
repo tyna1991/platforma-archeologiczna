@@ -6,6 +6,15 @@
         top:0px !important;
         right: 0px !important;
     }
+    #lang-switch
+    {
+        width: 76px!important;
+    }
+    #lang-switch-list
+    {
+        width: 40px !important;
+        right: 185px!important;
+    }
 }
 @media (max-width:750px)
 {
