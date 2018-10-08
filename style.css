@@ -65,7 +65,7 @@ body{
     padding: 0 20px;
     widows: 100%;
     height:37px;
-    background-color: #404040;
+    background-color: #fbfbfbff;
 }
 .ePlatforma-logo
 {
@@ -84,14 +84,14 @@ body{
     top:0px;
     right: 150px;
     padding: 5.5px 10px;
-    color:white;
+    color:black;
     
 
     
 }
 #lang-switch:hover
 {
-background-color: #b7b8b9
+background-color: #dbdee0
 }
 #lang-switch-list
 {
@@ -157,14 +157,14 @@ margin:0px;
 {
 
     padding: 3.5px 10px;
-    background-color: #ecc62d;
+    background-color: #ffd530ff;
     color: #5d4e14!important;
     margin:2px;
     border-radius: 10%;
     font-weight: 400;
 }
 .button-style:hover{
-    background-color: #ffd530;
+    background-color: #f1c619;
 }
 #nav-opener
 {
@@ -218,7 +218,7 @@ margin:0px;
     display: block;
     text-transform: uppercase;  
     color: black;
-    font-weight: 400;
+    font-weight: 500;
 }
 #nav a:hover{
     text-decoration: underline;
@@ -242,7 +242,7 @@ margin:0px;
 }
 i{
     font-size:20px;
-    color: rgb(152, 148, 148);
+    color:black;
 }
 #table-container
 {
