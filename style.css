@@ -1,79 +1,4 @@
-@media (max-width:450px)
-{
-    .ePlatforma-logo
-    {
-        display: block!important;
-    }
-    #nav-opener
-    {
-        position: relative !important;
-        top:0px !important;
-        right: 0px !important;
-    }
-}
-@media (max-width:550px)
-{
-    
-    #lang-switch
-    {
-        width: 76px!important;
-    }
-    #lang-switch-list
-    {
-        width: 40px !important;
-        right: 185px!important;
-    }
-    
-    #wcwag
-    {
-        right:225px!important;
-    }
-}
-@media (max-width:750px)
-{
-    #nav
-    {
-        top: 0px !important;
-        right: 0px !important;
-        padding: 5px !important;
-        border-radius: 2% !important;
-        background-color: #fbfbfb;
-        margin:0 35px !important;
 
-        
-    } 
-    #nav ul
-    {
-        position: relative !important;
-        display: block !important;
-        
-    }
-    #nav>li>a
-    {
-        color:#cacaca;
-        cursor: default !important;
-        text-decoration: none!important;
-    }
-    .open
-    {
-        display: block !important;
-    }
-    .closed
-    {
-        display: none !important;
-    }
-    #nav-opener
-    {
-        display: inline-block !important;
-        position: absolute;
-        top: 60px;
-        right: 30px;
-    }
-    .fa-times
-    {
-        visibility: hidden;
-    }
-}
 
 body{
     margin:0px;
@@ -322,3 +247,80 @@ table.table-hover tbody tr:hover
 .dataTables_paginate a{
     color:black !important;
 }
+@media (max-width:750px)
+{
+    #nav
+    {
+        top: 0px;
+        right: 0px;
+        padding: 5px;
+        border-radius: 2%;
+        background-color: #fbfbfb;
+        margin:0 35px;
+
+        
+    } 
+    #nav ul
+    {
+        position: relative;
+        display: block;
+        
+    }
+    #nav>li>a
+    {
+        color:#cacaca;
+        cursor: default;
+        text-decoration: none;
+    }
+    .open
+    {
+        display: block !important;
+    }
+    .closed
+    {
+        display: none !important;
+    }
+    #nav-opener
+    {
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+    }
+    .fa-times
+    {
+        visibility: hidden;
+    }
+}
+@media (max-width:550px)
+{
+    
+    #lang-switch
+    {
+        width: 76px;
+    }
+    #lang-switch-list
+    {
+        width: 40px;
+        right: 185px;
+    }
+    
+    #wcwag
+    {
+        right:225px;
+    }
+}
+@media (max-width:450px)
+{
+    .ePlatforma-logo
+    {
+        display: block;
+    }
+    #nav-opener
+    {
+        position: relative;
+        top:0px;
+        right: 0px;
+    }
+}
+
